@@ -498,7 +498,7 @@ Vue.createApp({
         this.player.onchallenge = true;
         if(this.player.challenges.includes(3)){
           for(let i=0;i<8;i++){
-            this.player.generatorsMode[i] = i/2
+            this.player.generatorsMode[i] = Math.trunc(i/2)
           }
         }
       }
